@@ -1,0 +1,12 @@
+run = "sh api/handler.sh"
+
+[nix]
+channel = "stable-22_11"
+
+[deployment]
+run = ["sh", "-c", "cowsay Configure me!"]
+
+
+
+[env]
+token = 5d38621cf4f1ad921c54f7c7
