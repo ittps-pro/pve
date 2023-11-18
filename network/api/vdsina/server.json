@@ -1,0 +1,88 @@
+{
+    "status": "ok",
+    "status_msg": "Server list",
+    "data": [
+        {
+            "id": 2189641,
+            "name": "vpn.ittps.pro",
+            "full_name": "Сервер 1 ГБ #2189641 – vpn.ittps.pro",
+            "created": "2023-11-09 11:39:16",
+            "updated": "2023-11-18 12:12:13",
+            "end": "2023-11-19 11:40:35",
+            "status": "active",
+            "status_text": null,
+            "ip": {
+                "id": 62600,
+                "ip": "46.151.31.203",
+                "type": "4",
+                "host": "vpn.ittps.pro",
+                "gateway": "46.151.31.1",
+                "netmask": "255.255.255.0",
+                "mac": "52:54:00:21:69:49",
+                "system": true,
+                "is_net": false,
+                "active": true
+            },
+            "server-plan": {
+                "id": 92,
+                "name": "1 ГБ"
+            },
+            "template": {
+                "id": 41,
+                "name": "WireGuard VPN (Ubuntu 22)"
+            },
+            "datacenter": {
+                "id": 4,
+                "name": "Амстердам, Нидерланды",
+                "country": "nl"
+            },
+            "can": {
+                "reboot": true,
+                "update": true,
+                "delete": true,
+                "prolong": false
+            }
+        },
+        {
+            "id": 2186078,
+            "name": "pve",
+            "full_name": "Сервер EPYC #2186078 – pve",
+            "created": "2023-11-07 00:45:39",
+            "updated": "2023-11-18 20:54:47",
+            "end": "2023-11-19 00:48:20",
+            "status": "active",
+            "status_text": null,
+            "ip": {
+                "id": 21746,
+                "ip": "193.178.169.78",
+                "type": "4",
+                "host": "pve.ittps.pro",
+                "gateway": "193.178.169.1",
+                "netmask": "255.255.255.0",
+                "mac": "52:54:00:21:5b:5e",
+                "system": false,
+                "is_net": false,
+                "active": true
+            },
+            "server-plan": {
+                "id": 77,
+                "name": "EPYC"
+            },
+            "template": {
+                "id": 32,
+                "name": "Windows Server 2022"
+            },
+            "datacenter": {
+                "id": 4,
+                "name": "Амстердам, Нидерланды",
+                "country": "nl"
+            },
+            "can": {
+                "reboot": true,
+                "update": true,
+                "delete": true,
+                "prolong": false
+            }
+        }
+    ]
+}
