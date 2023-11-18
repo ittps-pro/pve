@@ -1,0 +1,23 @@
+iface lo inet loopback
+
+iface eth0 inet manual
+
+#iface eno2 inet manual
+
+#iface eno3 inet manual
+
+auto bond0
+iface bond0 inet static
+      bond-slaves eno1 eno2
+      address  {{ vdsina.network.address }}
+      bond-miimon 100
+      bond-mode 802.3ad
+      bond-xmit-hash-policy layer2+3
+
+auto vmbr0
+iface vmbr0 inet static
+        address  10.10.10.2/24
+        gateway  10.10.10.1
+        bridge-ports eno3
+        bridge-stp off
+        bridge-fd 0
